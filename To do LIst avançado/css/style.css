@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+  height: 100vh;
+}
+
+body{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 90vh;
+    background-color: rgb(47, 47, 47)
+}
+
+.container{
+    max-width: 450px;
+    flex-direction: column;
+    padding: 0 3rem;
+    background-color: #fff;
+    border-radius: 15px;
+    transition: 0.2s;
+}
+#container-box{
+    width: 20rem;
+    background-color: #fff;
+    border:1px solid #000;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+#container-box h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-bottom: 1rem;
+    color: #004c63;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+#add-task, #edit-task{
+    border-bottom: 1px solid #d7d7d7;
+    padding: 1rem ;
+}
+
+#container-form p{
+    margin-bottom: 0.4rem;
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+#edit-task p{
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+#container-form select{
+    padding: 0.2rem;
+    border: 1px solid #004c63;
+    border-radius: 0.3rem;
+}
+
+#container-form input{
+    padding: 0.3rem;
+    border: 1px solid #004c63;
+    border-radius: 0.3rem;
+}
+#container-form label{
+    margin-left: 1rem;
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+#container-form #search-task{
+    width: 7rem;
+}
+
+#cancel-edit-btn{
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: 2px solid #004c63;
+    padding: 0.2rem 0.4rem;
+    margin: 0.2rem 0.8rem 0 0;
+}
+
+#form-control input{
+    padding: 0.3rem;
+    border: 1px solid #004c63;
+    border-radius: 0.3rem;
+}
+
+button{
+    cursor: pointer;
+    border-radius: 0.3rem;
+    border: 2px solid #004c63;
+    padding: 0.2rem 0.4rem;
+    margin: 0.2rem;
+    transition: .4s;
+}
+
+button i{
+    color: rgb(25, 63, 101);
+}
+
+button:hover{
+    background-color:  rgb(25, 63, 101);
+    color: #fff;
+}
+button:hover > i {
+    color: #fff
+}
+
+.hide{
+    display: none;
+}
+/* todo container */
+.tasks{
+    padding: .4rem;
+    color: #000000;
+    margin-bottom: 0.2rem;
+    border: 2px solid rgb(25, 63, 101);
+    font-size: 0.9rem;
+    font-weight:bold;
+}
+
+.tasks h3{
+    font-size: 0.9rem;
+}
+
+ /* Todo Toolbar */
+#toolbar {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+  }
+  
+  #toolbar h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  #search {
+    border-right: 1px solid #ddd;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #search form {
+    display: flex;
+  }
+  
+  #search input {
+    width: 100%;
+    margin-right: 0.3rem;
+  }
+  
+  #filter {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #filter select {
+    flex: 1;
+  }
+/* Todo List */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: 0.3s;
+  }
+  
+  .todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+  }
+  
+  .todo button {
+    margin-left: 0.4rem;
+  }
+  
+  .done {
+    background: #395169;
+  }
+  
+  .done h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+  }
+
+.active-filter{
+    display:none;
+  }
